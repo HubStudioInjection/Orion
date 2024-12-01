@@ -30,7 +30,8 @@ local OrionLib = {
 local Icons = {}
 
 local Success, Response = pcall(function()
-	warn("Loaded Successful!")
+	--Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/evoincorp/lucideblox/master/src/modules/util/icons.json")).icons
+	print(".")
 end)
 
 if not Success then
@@ -1709,11 +1710,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		return ElementFunction   
 	end  
 	
-	OrionLib:MakeNotification({
-		Name = "UI Library Upgrade",
-		Content = "New UI Library Available at sirius.menu/discord and sirius.menu/rayfield",
-		Time = 5
-	})
+	print("Loaded")
 	
 
 	
