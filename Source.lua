@@ -1709,8 +1709,12 @@ function OrionLib:MakeWindow(WindowConfig)
 		return ElementFunction   
 	end  
 	
-	print("Loaded")
 	
+	OrionLib:MakeNotification({
+		Name = "Solara Flake Info",
+		Content = "Solara Flake Loaded Successfully!",
+		Time = 5
+	})
 
 	
 	return TabFunction
